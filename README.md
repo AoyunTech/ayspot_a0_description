@@ -13,7 +13,7 @@ Rviz:
 
 or
 
-	roslaunch ayspot_a0_description display.launch model:='$(find ayspot_a0_description)/urdf/ayspot_a0.xacro'
+	roslaunch ayspot_a0_description display.launch
 
 
 Gazebo:

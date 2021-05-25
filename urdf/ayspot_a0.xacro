@@ -4,7 +4,8 @@
 <xacro:include filename="$(find ayspot_a0_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find ayspot_a0_description)/urdf/ayspot_a0.trans" />
 <xacro:include filename="$(find ayspot_a0_description)/urdf/ayspot_a0.gazebo" />
-<link name="dummy_link">
+
+<link name="dummy">
 </link>
 
 <link name="base_link">
@@ -27,6 +28,11 @@
     </geometry>
   </collision>
 </link>
+
+<joint name="dummy_joint" type="fixed">
+	<parent link="dummy"/>
+  <child link="base_link"/>
+</joint>
 
 <link name="Hip_R_L_1">
   <inertial>

@@ -5,33 +5,17 @@ ayspot_a0_controller:
     publish_rate: 50
 
   # Position Controllers --------------------------------------
-  rotate1_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: rotate1
-    pid: {p: 100.0, i: 0.01, d: 10.0}
   rotate2_position_controller:
     type: effort_controllers/JointPositionController
     joint: rotate2
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate4_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: rotate4
     pid: {p: 100.0, i: 0.01, d: 10.0}
   rotate5_position_controller:
     type: effort_controllers/JointPositionController
     joint: rotate5
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate7_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: rotate7
-    pid: {p: 100.0, i: 0.01, d: 10.0}
   rotate8_position_controller:
     type: effort_controllers/JointPositionController
     joint: rotate8
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate10_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: rotate10
     pid: {p: 100.0, i: 0.01, d: 10.0}
   rotate11_position_controller:
     type: effort_controllers/JointPositionController
@@ -52,4 +36,20 @@ ayspot_a0_controller:
   rotate12_position_controller:
     type: effort_controllers/JointPositionController
     joint: rotate12
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rotate1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: rotate1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rotate4_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: rotate4
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rotate7_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: rotate7
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rotate10_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: rotate10
     pid: {p: 100.0, i: 0.01, d: 10.0}

@@ -11,7 +11,7 @@
 <link name="base_link">
   <inertial>
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
-    <mass value="7.2"/>
+    <mass value="2.4"/>
     <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
   </inertial>
   <visual>
@@ -30,356 +30,463 @@
 </link>
 
 <joint name="dummy_joint" type="fixed">
-	<parent link="dummy"/>
+       <parent link="dummy"/>
   <child link="base_link"/>
 </joint>
 
-<link name="Hip_R_L_1">
+<link name="LH_HIP_1">
   <inertial>
     <origin rpy="0 0 0" xyz="0.04051033739800436 -0.005234177617256891 -5.4790762037348895e-05"/>
-    <mass value="1.33583436916926"/>
-    <inertia ixx="0.001589" ixy="-1.3e-05" ixz="1e-06" iyy="0.002428" iyz="1e-06" izz="0.0013"/>
+    <mass value="0.45945895500089196"/>
+    <inertia ixx="0.000547" ixy="-5e-06" ixz="0.0" iyy="0.000835" iyz="0.0" izz="0.000447"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="-0.1124 0.064996 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Hip_R_L_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/LH_HIP_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="-0.1124 0.064996 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Hip_R_L_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/LH_HIP_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Upper_R_L_1">
+<link name="LH_THIGH_1">
   <inertial>
     <origin rpy="0 0 0" xyz="-2.891827006121228e-05 -0.04524404540692291 -0.013476118053665942"/>
-    <mass value="2.2333989803838596"/>
-    <inertia ixx="0.005989" ixy="-2e-06" ixz="-2e-06" iyy="0.005386" iyz="-0.000996" izz="0.003026"/>
+    <mass value="0.7681754454823465"/>
+    <inertia ixx="0.00206" ixy="-1e-06" ixz="-1e-06" iyy="0.001852" iyz="-0.000342" izz="0.001041"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="-0.1782 0.086296 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Upper_R_L_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/LH_THIGH_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="-0.1782 0.086296 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Upper_R_L_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/LH_THIGH_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Lower_R_L_1">
-  <inertial>
-    <origin rpy="0 0 0" xyz="-0.006253440119199455 -2.128928026307042e-05 -0.07010670471397071"/>
-    <mass value="0.5393628502105555"/>
-    <inertia ixx="0.00264" ixy="0.0" ixz="-3.5e-05" iyy="0.002688" iyz="1e-06" izz="9.6e-05"/>
-  </inertial>
-  <visual>
-    <origin rpy="0 0 0" xyz="-0.178242 0.166126 -0.196941"/>
-    <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Lower_R_L_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin rpy="0 0 0" xyz="-0.178242 0.166126 -0.196941"/>
-    <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Lower_R_L_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="Hip_R_R_1">
+<link name="RH_HIP_1">
   <inertial>
     <origin rpy="0 0 0" xyz="0.040510337398002944 0.0052341776172639826 5.383667308550555e-05"/>
-    <mass value="1.33583436916926"/>
-    <inertia ixx="0.001589" ixy="1.3e-05" ixz="-1e-06" iyy="0.002428" iyz="1e-06" izz="0.0013"/>
+    <mass value="0.45945895500089196"/>
+    <inertia ixx="0.000547" ixy="5e-06" ixz="-0.0" iyy="0.000835" iyz="0.0" izz="0.000447"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="-0.1124 -0.064996 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Hip_R_R_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/RH_HIP_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="-0.1124 -0.064996 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Hip_R_R_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/RH_HIP_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Upper_R_R_1">
+<link name="RH_THIGH_1">
   <inertial>
     <origin rpy="0 0 0" xyz="2.970750115618981e-05 0.045244045406924546 -0.013476118053671493"/>
-    <mass value="2.2333989803838596"/>
-    <inertia ixx="0.005989" ixy="-2e-06" ixz="2e-06" iyy="0.005386" iyz="0.000996" izz="0.003026"/>
+    <mass value="0.7681754454823465"/>
+    <inertia ixx="0.00206" ixy="-1e-06" ixz="1e-06" iyy="0.001852" iyz="0.000342" izz="0.001041"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="-0.1782 -0.086296 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Upper_R_R_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/RH_THIGH_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="-0.1782 -0.086296 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Upper_R_R_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/RH_THIGH_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Lower_R_R_1">
-  <inertial>
-    <origin rpy="0 0 0" xyz="-0.006253315448385144 -2.1545960241842188e-05 -0.07010670471397601"/>
-    <mass value="0.5393628502105555"/>
-    <inertia ixx="0.00264" ixy="0.0" ixz="-3.5e-05" iyy="0.002688" iyz="1e-06" izz="9.6e-05"/>
-  </inertial>
-  <visual>
-    <origin rpy="0 0 0" xyz="-0.178158 -0.166126 -0.196941"/>
-    <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Lower_R_R_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin rpy="0 0 0" xyz="-0.178158 -0.166126 -0.196941"/>
-    <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Lower_R_R_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="Hip_F_L_1">
+<link name="LF_HIP_1">
   <inertial>
     <origin rpy="0 0 0" xyz="-0.04051033739800672 -0.005234177617263899 5.383667308506146e-05"/>
-    <mass value="1.33583436916926"/>
-    <inertia ixx="0.001589" ixy="1.3e-05" ixz="1e-06" iyy="0.002428" iyz="-1e-06" izz="0.0013"/>
+    <mass value="0.45945895500089196"/>
+    <inertia ixx="0.000547" ixy="5e-06" ixz="0.0" iyy="0.000835" iyz="-0.0" izz="0.000447"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="0.1174 0.064996 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Hip_F_L_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/LF_HIP_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="0.1174 0.064996 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Hip_F_L_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/LF_HIP_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Upper_F_L_1">
+<link name="LF_THIGH_1">
   <inertial>
     <origin rpy="0 0 0" xyz="-2.9707501157327787e-05 -0.04524404540692452 -0.01347611805367166"/>
-    <mass value="2.2333989803838596"/>
-    <inertia ixx="0.005989" ixy="-2e-06" ixz="-2e-06" iyy="0.005386" iyz="-0.000996" izz="0.003026"/>
+    <mass value="0.7681754454823465"/>
+    <inertia ixx="0.00206" ixy="-1e-06" ixz="-1e-06" iyy="0.001852" iyz="-0.000342" izz="0.001041"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="0.1832 0.086296 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Upper_F_L_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/LF_THIGH_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="0.1832 0.086296 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Upper_F_L_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/LF_THIGH_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Lower_F_L_1">
+<link name="RF_HIP_1">
   <inertial>
-    <origin rpy="0 0 0" xyz="-0.006254229350295265 -2.1289280264735755e-05 -0.07010670471397618"/>
-    <mass value="0.5393628502105555"/>
-    <inertia ixx="0.00264" ixy="0.0" ixz="-3.5e-05" iyy="0.002688" iyz="1e-06" izz="9.6e-05"/>
-  </inertial>
-  <visual>
-    <origin rpy="0 0 0" xyz="0.183158 0.166126 -0.196941"/>
-    <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Lower_F_L_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin rpy="0 0 0" xyz="0.183158 0.166126 -0.196941"/>
-    <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Lower_F_L_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="Hip_F_R_1">
-  <inertial>
-    <origin rpy="0 0 0" xyz="-0.04051033739800805 0.005234177617257085 -5.479076203718236e-05"/>
-    <mass value="1.33583436916926"/>
-    <inertia ixx="0.001589" ixy="-1.3e-05" ixz="-1e-06" iyy="0.002428" iyz="-1e-06" izz="0.0013"/>
+    <origin rpy="0 0 0" xyz="-0.04051033739800805 0.005234177617257099 -5.479076203718236e-05"/>
+    <mass value="0.45945895500089196"/>
+    <inertia ixx="0.000547" ixy="-5e-06" ixz="-0.0" iyy="0.000835" iyz="-0.0" izz="0.000447"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="0.1174 -0.064996 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Hip_F_R_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/RF_HIP_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="0.1174 -0.064996 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Hip_F_R_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/RF_HIP_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Upper_F_R_1">
+<link name="RF_THIGH_1">
   <inertial>
     <origin rpy="0 0 0" xyz="2.891827006021308e-05 0.04524404540692305 -0.013476118053665886"/>
-    <mass value="2.2333989803838596"/>
-    <inertia ixx="0.005989" ixy="-2e-06" ixz="2e-06" iyy="0.005386" iyz="0.000996" izz="0.003026"/>
+    <mass value="0.7681754454823465"/>
+    <inertia ixx="0.00206" ixy="-1e-06" ixz="1e-06" iyy="0.001852" iyz="0.000342" izz="0.001041"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="0.1832 -0.086296 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Upper_F_R_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/RF_THIGH_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="0.1832 -0.086296 -0.346995"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Upper_F_R_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/RF_THIGH_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Lower_F_R_1">
+<link name="LH_SHANK_1">
   <inertial>
-    <origin rpy="0 0 0" xyz="-0.006254104679481315 -2.15459602433965e-05 -0.07010670471397054"/>
-    <mass value="0.5393628502105555"/>
-    <inertia ixx="0.00264" ixy="0.0" ixz="-3.5e-05" iyy="0.002688" iyz="1e-06" izz="9.6e-05"/>
+    <origin rpy="0 0 0" xyz="-0.0064100341188935706 2.956108866303264e-07 -0.07012232434869531"/>
+    <mass value="0.19256772036271913"/>
+    <inertia ixx="0.000926" ixy="-0.0" ixz="-1.3e-05" iyy="0.000942" iyz="-0.0" izz="3.5e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.178242 0.166126 -0.196941"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/LH_SHANK_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.178242 0.166126 -0.196941"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/LH_SHANK_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LH_FOOT_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.00023269498177136416 1.340763808033163e-07 -0.0009015558250500509"/>
+    <mass value="0.059280341441965374"/>
+    <inertia ixx="1.1e-05" ixy="-0.0" ixz="-0.0" iyy="1e-05" iyz="0.0" izz="1.1e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.178226 0.166126 -0.016914"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/LH_FOOT_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.178226 0.166126 -0.016914"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/LH_FOOT_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RH_SHANK_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.006530762043460314 3.8930877271914355e-08 -0.07012232434871205"/>
+    <mass value="0.19256772036272068"/>
+    <inertia ixx="0.000926" ixy="-0.0" ixz="-1.3e-05" iyy="0.000942" iyz="-0.0" izz="3.5e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.178158 -0.166126 -0.196941"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/RH_SHANK_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.178158 -0.166126 -0.196941"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/RH_SHANK_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RH_FOOT_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.00023296705720435296 -1.2260367407423978e-07 -0.0009015558250666383"/>
+    <mass value="0.059280341441965416"/>
+    <inertia ixx="1.1e-05" ixy="-0.0" ixz="-0.0" iyy="1e-05" iyz="0.0" izz="1.1e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.178021 -0.166126 -0.016914"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/RH_FOOT_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.178021 -0.166126 -0.016914"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/RH_FOOT_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LF_SHANK_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.006531675945371573 2.956109154683695e-07 -0.07012232434871213"/>
+    <mass value="0.19256772036272068"/>
+    <inertia ixx="0.000926" ixy="-0.0" ixz="-1.3e-05" iyy="0.000942" iyz="-0.0" izz="3.5e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.183158 0.166126 -0.196941"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/LF_SHANK_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.183158 0.166126 -0.196941"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/LF_SHANK_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LF_FOOT_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.00023305315529309478 1.340764246293702e-07 -0.0009015558250666661"/>
+    <mass value="0.059280341441965416"/>
+    <inertia ixx="1.1e-05" ixy="-0.0" ixz="-0.0" iyy="1e-05" iyz="0.0" izz="1.1e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.183296 0.166126 -0.016914"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/LF_FOOT_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.183296 0.166126 -0.016914"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/LF_FOOT_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RF_SHANK_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0065315512745564575 3.8930952100946215e-08 -0.07012232434868426"/>
+    <mass value="0.19256772036272068"/>
+    <inertia ixx="0.000926" ixy="-0.0" ixz="-1.3e-05" iyy="0.000942" iyz="-0.0" izz="3.5e-05"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="0.183242 -0.166126 -0.196941"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Lower_F_R_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/RF_SHANK_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin rpy="0 0 0" xyz="0.183242 -0.166126 -0.196941"/>
     <geometry>
-      <mesh filename="package://ayspot_a0_description/meshes/Lower_F_R_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://ayspot_a0_description/meshes/RF_SHANK_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<joint name="joint4" type="revolute">
+<link name="RF_FOOT_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.00023317782610787763 -1.2260358442373054e-07 -0.0009015558250388134"/>
+    <mass value="0.059280341441965416"/>
+    <inertia ixx="1.1e-05" ixy="-0.0" ixz="-0.0" iyy="1e-05" iyz="0.0" izz="1.1e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.18338 -0.166126 -0.016914"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/RF_FOOT_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.18338 -0.166126 -0.016914"/>
+    <geometry>
+      <mesh filename="package://ayspot_a0_description/meshes/RF_FOOT_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="rotate1" type="revolute">
   <origin rpy="0 0 0" xyz="0.1124 -0.064996 0.346995"/>
   <parent link="base_link"/>
-  <child link="Hip_R_L_1"/>
+  <child link="LH_HIP_1"/>
   <axis xyz="1.0 -0.0 -0.0"/>
   <limit effort="100" lower="-0.698132" upper="0.698132" velocity="100"/>
 </joint>
 
-<joint name="joint5" type="revolute">
+<joint name="rotate2" type="revolute">
   <origin rpy="0 0 0" xyz="0.0658 -0.0213 0.0"/>
-  <parent link="Hip_R_L_1"/>
-  <child link="Upper_R_L_1"/>
+  <parent link="LH_HIP_1"/>
+  <child link="LH_THIGH_1"/>
   <axis xyz="0.0 -1.0 0.0"/>
   <limit effort="100" lower="-1.570796" upper="1.570796" velocity="100"/>
 </joint>
 
-<joint name="joint6" type="revolute">
-  <origin rpy="0 0 0" xyz="4.2e-05 -0.07983 -0.150054"/>
-  <parent link="Upper_R_L_1"/>
-  <child link="Lower_R_L_1"/>
-  <axis xyz="-0.0 1.0 0.0"/>
-  <limit effort="100" lower="0.0" upper="2.617994" velocity="100"/>
-</joint>
-
-<joint name="joint7" type="revolute">
+<joint name="rotate4" type="revolute">
   <origin rpy="0 0 0" xyz="0.1124 0.064996 0.346995"/>
   <parent link="base_link"/>
-  <child link="Hip_R_R_1"/>
+  <child link="RH_HIP_1"/>
   <axis xyz="1.0 0.0 0.0"/>
   <limit effort="100" lower="-0.698132" upper="0.698132" velocity="100"/>
 </joint>
 
-<joint name="joint8" type="revolute">
+<joint name="rotate5" type="revolute">
   <origin rpy="0 0 0" xyz="0.0658 0.0213 0.0"/>
-  <parent link="Hip_R_R_1"/>
-  <child link="Upper_R_R_1"/>
+  <parent link="RH_HIP_1"/>
+  <child link="RH_THIGH_1"/>
   <axis xyz="-0.0 1.0 -0.0"/>
   <limit effort="100" lower="-1.570796" upper="1.570796" velocity="100"/>
 </joint>
 
-<joint name="joint9" type="revolute">
-  <origin rpy="0 0 0" xyz="-4.2e-05 0.07983 -0.150054"/>
-  <parent link="Upper_R_R_1"/>
-  <child link="Lower_R_R_1"/>
-  <axis xyz="-0.0 -1.0 0.0"/>
-  <limit effort="100" lower="-2.617994" upper="0.0" velocity="100"/>
-</joint>
-
-<joint name="joint10" type="revolute">
+<joint name="rotate7" type="revolute">
   <origin rpy="0 0 0" xyz="-0.1174 -0.064996 0.346995"/>
   <parent link="base_link"/>
-  <child link="Hip_F_L_1"/>
+  <child link="LF_HIP_1"/>
   <axis xyz="1.0 0.0 0.0"/>
   <limit effort="100" lower="-0.698132" upper="0.698132" velocity="100"/>
 </joint>
 
-<joint name="joint11" type="revolute">
+<joint name="rotate8" type="revolute">
   <origin rpy="0 0 0" xyz="-0.0658 -0.0213 0.0"/>
-  <parent link="Hip_F_L_1"/>
-  <child link="Upper_F_L_1"/>
+  <parent link="LF_HIP_1"/>
+  <child link="LF_THIGH_1"/>
   <axis xyz="0.0 -1.0 -0.0"/>
   <limit effort="100" lower="-1.570796" upper="1.570796" velocity="100"/>
 </joint>
 
-<joint name="joint12" type="revolute">
-  <origin rpy="0 0 0" xyz="4.2e-05 -0.07983 -0.150054"/>
-  <parent link="Upper_F_L_1"/>
-  <child link="Lower_F_L_1"/>
-  <axis xyz="-0.0 1.0 0.0"/>
-  <limit effort="100" lower="0.0" upper="2.617994" velocity="100"/>
-</joint>
-
-<joint name="joint13" type="revolute">
+<joint name="rotate10" type="revolute">
   <origin rpy="0 0 0" xyz="-0.1174 0.064996 0.346995"/>
   <parent link="base_link"/>
-  <child link="Hip_F_R_1"/>
+  <child link="RF_HIP_1"/>
   <axis xyz="1.0 0.0 0.0"/>
   <limit effort="100" lower="-0.698132" upper="0.698132" velocity="100"/>
 </joint>
 
-<joint name="joint14" type="revolute">
+<joint name="rotate11" type="revolute">
   <origin rpy="0 0 0" xyz="-0.0658 0.0213 0.0"/>
-  <parent link="Hip_F_R_1"/>
-  <child link="Upper_F_R_1"/>
+  <parent link="RF_HIP_1"/>
+  <child link="RF_THIGH_1"/>
   <axis xyz="-0.0 1.0 0.0"/>
   <limit effort="100" lower="-1.570796" upper="1.570796" velocity="100"/>
 </joint>
 
-<joint name="joint15" type="revolute">
+<joint name="rotate3" type="revolute">
+  <origin rpy="0 0 0" xyz="4.2e-05 -0.07983 -0.150054"/>
+  <parent link="LH_THIGH_1"/>
+  <child link="LH_SHANK_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+  <limit effort="100" lower="0.0" upper="2.617994" velocity="100"/>
+</joint>
+
+<joint name="rigid1" type="fixed">
+  <origin rpy="0 0 0" xyz="-1.6e-05 0.0 -0.180027"/>
+  <parent link="LH_SHANK_1"/>
+  <child link="LH_FOOT_1"/>
+</joint>
+
+<joint name="rotate6" type="revolute">
   <origin rpy="0 0 0" xyz="-4.2e-05 0.07983 -0.150054"/>
-  <parent link="Upper_F_R_1"/>
-  <child link="Lower_F_R_1"/>
+  <parent link="RH_THIGH_1"/>
+  <child link="RH_SHANK_1"/>
   <axis xyz="-0.0 -1.0 0.0"/>
   <limit effort="100" lower="-2.617994" upper="0.0" velocity="100"/>
+</joint>
+
+<joint name="rigid2" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.000137 0.0 -0.180027"/>
+  <parent link="RH_SHANK_1"/>
+  <child link="RH_FOOT_1"/>
+</joint>
+
+<joint name="rotate9" type="revolute">
+  <origin rpy="0 0 0" xyz="4.2e-05 -0.07983 -0.150054"/>
+  <parent link="LF_THIGH_1"/>
+  <child link="LF_SHANK_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+  <limit effort="100" lower="0.0" upper="2.617994" velocity="100"/>
+</joint>
+
+<joint name="rigid3" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.000138 0.0 -0.180027"/>
+  <parent link="LF_SHANK_1"/>
+  <child link="LF_FOOT_1"/>
+</joint>
+
+<joint name="rotate12" type="continuous">
+  <origin rpy="0 0 0" xyz="-4.2e-05 0.07983 -0.150054"/>
+  <parent link="RF_THIGH_1"/>
+  <child link="RF_SHANK_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="rigid4" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.000138 0.0 -0.180027"/>
+  <parent link="RF_SHANK_1"/>
+  <child link="RF_FOOT_1"/>
 </joint>
 
 </robot>

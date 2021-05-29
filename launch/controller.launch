@@ -1,7 +1,7 @@
 <launch>
 
 <rosparam file="$(find ayspot_a0_description)/launch/controller.yaml" command="load"/>
-<node args="rotate2_position_controller rotate5_position_controller rotate8_position_controller rotate11_position_controller rotate3_position_controller rotate6_position_controller rotate9_position_controller rotate12_position_controller rotate1_position_controller rotate4_position_controller rotate7_position_controller rotate10_position_controller joint_state_controller " name="controller_spawner" ns="ayspot_a0" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
+<node args="LH_HIP_rotate_position_controller LH_THIGH_rotate_position_controller LH_SHARK_rotate_position_controller RH_HIP_rotate_position_controller RH_THIGH_rotate_position_controller RH_SHARK_rotate_position_controller RF_HIP_rotate_position_controller RF_SHARK_rotate_position_controller LF_SHARK_rotate_position_controller LF_HIP_rotate_position_controller LF_THIGH_rotate_position_controller RF_THIGH_rotate_position_controller joint_state_controller " name="controller_spawner" ns="ayspot_a0" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
 <node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
   <remap from="/joint_states" to="/ayspot_a0/joint_states"/>
 </node>

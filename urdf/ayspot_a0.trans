@@ -1,133 +1,133 @@
 <?xml version="1.0" ?>
 <robot name="ayspot_a0" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<transmission name="rotate2_tran">
+<transmission name="LH_HIP_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotate2">
+  <joint name="LH_HIP_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotate2_actr">
+  <actuator name="LH_HIP_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotate5_tran">
+<transmission name="LH_THIGH_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotate5">
+  <joint name="LH_THIGH_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotate5_actr">
+  <actuator name="LH_THIGH_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotate8_tran">
+<transmission name="LH_SHARK_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotate8">
+  <joint name="LH_SHARK_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotate8_actr">
+  <actuator name="LH_SHARK_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotate11_tran">
+<transmission name="RH_HIP_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotate11">
+  <joint name="RH_HIP_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotate11_actr">
+  <actuator name="RH_HIP_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotate3_tran">
+<transmission name="RH_THIGH_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotate3">
+  <joint name="RH_THIGH_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotate3_actr">
+  <actuator name="RH_THIGH_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotate6_tran">
+<transmission name="RH_SHARK_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotate6">
+  <joint name="RH_SHARK_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotate6_actr">
+  <actuator name="RH_SHARK_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotate9_tran">
+<transmission name="RF_HIP_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotate9">
+  <joint name="RF_HIP_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotate9_actr">
+  <actuator name="RF_HIP_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotate12_tran">
+<transmission name="RF_SHARK_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotate12">
+  <joint name="RF_SHARK_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotate12_actr">
+  <actuator name="RF_SHARK_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotate1_tran">
+<transmission name="LF_SHARK_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotate1">
+  <joint name="LF_SHARK_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotate1_actr">
+  <actuator name="LF_SHARK_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotate4_tran">
+<transmission name="LF_HIP_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotate4">
+  <joint name="LF_HIP_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotate4_actr">
+  <actuator name="LF_HIP_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotate7_tran">
+<transmission name="LF_THIGH_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotate7">
+  <joint name="LF_THIGH_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotate7_actr">
+  <actuator name="LF_THIGH_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotate10_tran">
+<transmission name="RF_THIGH_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotate10">
+  <joint name="RF_THIGH_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotate10_actr">
+  <actuator name="RF_THIGH_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>

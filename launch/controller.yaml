@@ -5,51 +5,51 @@ ayspot_a0_controller:
     publish_rate: 50
 
   # Position Controllers --------------------------------------
-  rotate2_position_controller:
+  LH_HIP_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: rotate2
+    joint: LH_HIP_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate5_position_controller:
+  LH_THIGH_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: rotate5
+    joint: LH_THIGH_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate8_position_controller:
+  LH_SHARK_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: rotate8
+    joint: LH_SHARK_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate11_position_controller:
+  RH_HIP_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: rotate11
+    joint: RH_HIP_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate3_position_controller:
+  RH_THIGH_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: rotate3
+    joint: RH_THIGH_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate6_position_controller:
+  RH_SHARK_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: rotate6
+    joint: RH_SHARK_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate9_position_controller:
+  RF_HIP_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: rotate9
+    joint: RF_HIP_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate12_position_controller:
+  RF_SHARK_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: rotate12
+    joint: RF_SHARK_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate1_position_controller:
+  LF_SHARK_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: rotate1
+    joint: LF_SHARK_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate4_position_controller:
+  LF_HIP_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: rotate4
+    joint: LF_HIP_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate7_position_controller:
+  LF_THIGH_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: rotate7
+    joint: LF_THIGH_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  rotate10_position_controller:
+  RF_THIGH_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: rotate10
+    joint: RF_THIGH_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}

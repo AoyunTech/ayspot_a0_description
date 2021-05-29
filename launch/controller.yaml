@@ -29,27 +29,27 @@ ayspot_a0_controller:
     type: effort_controllers/JointPositionController
     joint: RH_SHARK_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  RF_HIP_rotate_position_controller:
+  LF_HIP_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: RF_HIP_rotate
+    joint: LF_HIP_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  RF_SHARK_rotate_position_controller:
+  LF_THIGH_roate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: RF_SHARK_rotate
+    joint: LF_THIGH_roate
     pid: {p: 100.0, i: 0.01, d: 10.0}
   LF_SHARK_rotate_position_controller:
     type: effort_controllers/JointPositionController
     joint: LF_SHARK_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  LF_HIP_rotate_position_controller:
+  RF_HIP_rorate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: LF_HIP_rotate
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  LF_THIGH_rotate_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: LF_THIGH_rotate
+    joint: RF_HIP_rorate
     pid: {p: 100.0, i: 0.01, d: 10.0}
   RF_THIGH_rotate_position_controller:
     type: effort_controllers/JointPositionController
     joint: RF_THIGH_rotate
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RF_SHARK_rotate_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: RF_SHARK_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
